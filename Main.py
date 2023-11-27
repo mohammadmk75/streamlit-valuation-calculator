@@ -88,7 +88,7 @@ def main():
     result_df = None 
     st.title("Valuation Calculator")
     
-    number_of_cofounders = st.number_input('# How Many Co Founders Are There? ' ,min_value=0, max_value=100, step=1)
+    number_of_cofounders = st.number_input('# How Many Co Founders Are There? ' ,min_value=1, max_value=100, step=1)
     
     if number_of_cofounders >0:
         cofounders = [st.number_input(f'Co Founder #{i + 1} Percentage (%):', min_value=0, max_value=100, step=5) for i in range(number_of_cofounders)]
