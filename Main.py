@@ -85,6 +85,8 @@ def calculation(cofounders, anti_dulations, pre_money_valuation,investments, tot
 
 
 def main():
+    logo_path = 'easycapraise-social-image.png'
+    st.image(logo_path, width = 200)
     result_df = None 
     st.title("Valuation Calculator")
     
